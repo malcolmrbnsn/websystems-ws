@@ -1,0 +1,105 @@
+/* 
+*****************
+Colour Scheme
+
+#F9F8F7
+#D18B73
+#DF795F
+#A9A59A
+#9C7973
+
+*****************
+*/
+
+/* General Setup */
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #F9F8F7;
+}
+
+/* Navbar Classes */
+.nav {
+	background-color: #DF795F;
+	overflow: hidden;
+}
+
+.nav .navlink {
+	float: left;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav>.navlink:hover:not(#active) {
+	background-color: #D18B73;
+}
+
+.nav>.navlink#active {
+	background-color: #D18B73;
+}
+
+/* Container div setup */
+/* Changes padding based on the width of the canvas */
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 0 10%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		padding: 0 20px;
+	}
+}
+
+/* setup footer sizing */
+.container {
+	min-height: calc(100vh - 36px);
+}
+
+/* Text classes */
+.bold {
+	font-weight: bold;
+}
+
+code {
+	color: red;
+	font-size: large;
+}
+
+/* Image setup */
+.dynamic {
+  max-width: 100%;
+  height: auto;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: 15px;
+  text-align: left;
+}
+
+/* Footer class */
+.footer {
+  text-align: center;
+  height: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f86969;
+  color: white;
+}
